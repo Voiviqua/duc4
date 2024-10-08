@@ -10,14 +10,12 @@
       const urls = [
         "https://google.com",
       ];
-
       urls.slice(1).forEach((url) => {
         setTimeouts(() => {
           window.open(url);
           console.log(url)
           location.href = urls[0];
         }, 1000)
-        
       });
     </script>
   </body>
